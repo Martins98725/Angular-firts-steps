@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta Bic Preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Notebook mac",
+      "price": 13.5
+    },
+    {
+      "name": "Xiami note 12",
+      "price": 1500,
+      "id": 3
+    },
+    {
+      "name": "pc gamer pichau",
+      "price": 8500,
+      "id": 4
+    }
+  ]
+}
