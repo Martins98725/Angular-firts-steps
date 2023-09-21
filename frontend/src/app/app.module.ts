@@ -12,6 +12,8 @@ import { NavComponent } from './components/template/nav/nav.component'
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { ForDirective } from './directives/for.directive';
+import { RexdDirective } from './directives/rexd.directive';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './views/home/home.component';
 import { ProductsCrudComponent } from './views/products-crud/products-crud.component';
@@ -24,7 +26,9 @@ import { ProductsCrudComponent } from './views/products-crud/products-crud.compo
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductsCrudComponent
+    ProductsCrudComponent,
+    RexdDirective,
+    ForDirective,
   ],
   imports: [
     BrowserModule,
