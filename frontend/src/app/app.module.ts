@@ -17,6 +17,8 @@ import { RexdDirective } from './directives/rexd.directive';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './views/home/home.component';
 import { ProductsCrudComponent } from './views/products-crud/products-crud.component';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { MatButtonModule } from '@angular/material/button';
 
  
 @NgModule({
@@ -29,6 +31,7 @@ import { ProductsCrudComponent } from './views/products-crud/products-crud.compo
     ProductsCrudComponent,
     RexdDirective,
     ForDirective,
+    ProductCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { ProductsCrudComponent } from './views/products-crud/products-crud.compo
     MatToolbarModule,
     MatSidenavModule,
     MatListModule, 
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
