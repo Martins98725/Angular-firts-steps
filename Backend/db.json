@@ -8,7 +8,7 @@
     {
       "id": 2,
       "name": "Notebook mac",
-      "price": 13.500
+      "price": 13.5
     },
     {
       "name": "Xiaomi note 12",
@@ -19,6 +19,11 @@
       "name": "pc gamer pichau",
       "price": 8500,
       "id": 4
+    },
+    {
+      "name": "Produto teste",
+      "price": 120.79,
+      "id": 5
     }
   ]
 }
