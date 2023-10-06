@@ -24,6 +24,11 @@
       "name": "Produto teste",
       "price": 120.79,
       "id": 5
+    },
+    {
+      "name": "Plastation 5 ",
+      "price": "3200",
+      "id": 6
     }
   ]
 }

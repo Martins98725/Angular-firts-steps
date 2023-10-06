@@ -5,11 +5,13 @@
 }
 
 .sidenav i{
-    padding-right: 7px;
+    padding: 7px;
     text-align: center;
+    
 }
 .content{
     padding: 16px;
     background-color: white;
     color: white;
 }
+    
