@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,8 +8,7 @@ import { HeaderComponent } from './components/template/header/header.component';
 
 import{ MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
-import { NavComponent } from './components/template/nav/nav.component'
-
+import { NavComponent } from './components/template/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { ForDirective } from './directives/for.directive';
@@ -25,11 +24,15 @@ import { FormsModule } from '@angular/forms'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
 import { ProductReedComponent } from './components/products/product-reed/product-reed.component';
+import { ProductRead2Component } from './components/products/product-read2/product-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from'@angular/common';
 
+registerLocaleData(localePt)
 
-
-
- 
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +44,8 @@ import { ProductReedComponent } from './components/products/product-reed/product
     RexdDirective,
     ForDirective,
     ProductCreateComponent,
-    ProductReedComponent
+    ProductReedComponent,
+    ProductRead2Component
   ],
   imports: [
     BrowserModule,
@@ -58,9 +62,15 @@ import { ProductReedComponent } from './components/products/product-reed/product
     MatFormFieldModule,
     MatCardModule,
     MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
 
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
