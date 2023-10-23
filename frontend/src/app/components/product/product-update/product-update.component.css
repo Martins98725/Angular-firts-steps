@@ -1,0 +1,14 @@
+.div{
+    display: flex;
+    flex-direction: row;
+     gap: 7px;
+     padding: 10px;
+ }
+ #card{
+     padding: 5px;
+ }
+ form{
+     display: flex;
+     flex-direction: column;
+ 
+ }
