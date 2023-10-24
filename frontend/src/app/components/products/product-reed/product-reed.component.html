@@ -30,9 +30,9 @@
           <a routerLink="/products/update/{{ row.id }}" class="edit">
             <i class="material-icons edit">edit</i>
           </a>
-          <a routerLink="" class="delete">
+          <button routerLink="{{row.id}}" mat-raised-button (click)="deleteProduct()" class="delete">
             <i class="material-icons delete">delete</i>
-          </a>
+          </button>
 
         </td>
       </ng-container>
