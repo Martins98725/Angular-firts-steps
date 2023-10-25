@@ -1,14 +1,9 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Caneta Bic Preta",
-      "price": 5.89
-    },
-    {
       "id": 2,
       "name": "Notebook mac",
-      "price": 13.5
+      "price": "13500"
     },
     {
       "name": "Xiaomi note 12",

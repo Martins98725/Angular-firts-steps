@@ -30,16 +30,12 @@
           <a routerLink="/products/update/{{ row.id }}" class="edit">
             <i class="material-icons edit">edit</i>
           </a>
-          <button routerLink="{{row.id}}" mat-raised-button (click)="deleteProduct()" class="delete">
+          <button (click)="deleteProduct(row.id)" type="button" class="delete">
             <i class="material-icons delete">delete</i>
           </button>
-
         </td>
       </ng-container>
 
-        
-     
-  
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
